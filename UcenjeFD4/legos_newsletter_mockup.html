@@ -1,0 +1,165 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap');
+  .nl-wrap { background: #f0ede8; padding: 2rem 1rem; font-family: 'DM Sans', sans-serif; min-height: 100%; }
+  .nl-phone { max-width: 480px; margin: 0 auto; background: #fff; border-radius: 2px; overflow: hidden; box-shadow: 0 8px 40px rgba(16,25,35,0.18); }
+  .nl-header { background: #101923; padding: 28px 32px 22px; display: flex; justify-content: space-between; align-items: center; }
+  .nl-logo-ring { width: 40px; height: 40px; border-radius: 50%; border: 2.5px solid #e09f3e; background: #358397; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .nl-logo-l { font-family: 'Playfair Display', serif; color: #f5f5f5; font-size: 18px; font-weight: 700; line-height: 1; }
+  .nl-logo-text { margin-left: 10px; }
+  .nl-logo-name { color: #f5f5f5; font-size: 13px; font-weight: 500; letter-spacing: 0.04em; }
+  .nl-logo-sub { color: #e09f3e; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 1px; }
+  .nl-nav { display: flex; gap: 16px; }
+  .nl-nav a { color: #f5f5f580; font-size: 11px; text-decoration: none; letter-spacing: 0.06em; }
+  .nl-nav a:hover { color: #e09f3e; }
+  .nl-hero { background: linear-gradient(135deg, #00749c 0%, #358397 60%, #101923 100%); padding: 44px 32px 36px; position: relative; overflow: hidden; }
+  .nl-hero::before { content: ''; position: absolute; top: -30px; right: -30px; width: 140px; height: 140px; border-radius: 50%; border: 2px solid #e09f3e30; }
+  .nl-hero::after { content: ''; position: absolute; top: 20px; right: 20px; width: 60px; height: 60px; border-radius: 50%; border: 2px solid #e09f3e50; }
+  .nl-issue { color: #e09f3e; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 10px; }
+  .nl-hero-title { font-family: 'Playfair Display', serif; color: #f5f5f5; font-size: 26px; font-weight: 700; line-height: 1.25; margin-bottom: 12px; }
+  .nl-hero-desc { color: #f5f5f5b0; font-size: 13px; line-height: 1.65; margin-bottom: 22px; }
+  .nl-cta { display: inline-block; background: #e09f3e; color: #101923; font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 10px 22px; border-radius: 1px; text-decoration: none; }
+  .nl-divider { height: 3px; background: linear-gradient(90deg, #e09f3e, #00749c); }
+  .nl-section { padding: 28px 32px; border-bottom: 0.5px solid #e8e4dd; }
+  .nl-section-label { color: #e09f3e; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+  .nl-section-label::after { content: ''; flex: 1; height: 0.5px; background: #e09f3e50; }
+  .nl-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 4px; }
+  .nl-card { background: #f9f7f4; border-radius: 1px; padding: 14px; border-left: 2px solid #358397; }
+  .nl-card-tag { color: #00749c; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 6px; }
+  .nl-card-title { color: #101923; font-size: 13px; font-weight: 500; line-height: 1.35; margin-bottom: 6px; }
+  .nl-card-body { color: #888; font-size: 11px; line-height: 1.6; }
+  .nl-feature { display: flex; gap: 14px; align-items: flex-start; }
+  .nl-feat-icon { width: 36px; height: 36px; background: #101923; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 14px; }
+  .nl-feat-title { color: #101923; font-size: 14px; font-weight: 500; margin-bottom: 4px; }
+  .nl-feat-body { color: #888; font-size: 12px; line-height: 1.6; }
+  .nl-quote { background: #101923; padding: 24px 32px; text-align: center; }
+  .nl-quote-mark { color: #e09f3e; font-family: 'Playfair Display', serif; font-size: 40px; line-height: 0.5; margin-bottom: 10px; }
+  .nl-quote-text { color: #f5f5f5; font-family: 'Playfair Display', serif; font-style: italic; font-size: 15px; line-height: 1.6; }
+  .nl-quote-attr { color: #e09f3e; font-size: 10px; letter-spacing: 0.12em; margin-top: 12px; }
+  .nl-footer { background: #0e1620; padding: 20px 32px; }
+  .nl-footer-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; }
+  .nl-footer-brand { color: #f5f5f560; font-size: 11px; line-height: 1.7; }
+  .nl-footer-links { display: flex; flex-direction: column; gap: 4px; }
+  .nl-footer-links a { color: #f5f5f540; font-size: 10px; text-decoration: none; letter-spacing: 0.05em; }
+  .nl-footer-bottom { border-top: 0.5px solid #ffffff15; padding-top: 14px; display: flex; justify-content: space-between; align-items: center; }
+  .nl-footer-copy { color: #f5f5f530; font-size: 10px; }
+  .nl-bar { width: 28px; height: 2px; background: #e09f3e; margin-bottom: 4px; }
+  .nl-bar2 { width: 18px; height: 2px; background: #35839770; }
+</style>
+
+<div class="nl-wrap">
+  <div class="nl-phone">
+
+    <div class="nl-header">
+      <div style="display:flex;align-items:center;">
+        <div class="nl-logo-ring">
+          <span class="nl-logo-l">L</span>
+        </div>
+        <div class="nl-logo-text">
+          <div class="nl-logo-name">Legos Web Dizajn</div>
+          <div class="nl-logo-sub">Digital Newsletter</div>
+        </div>
+      </div>
+      <div class="nl-nav">
+        <a href="#">O nama</a>
+        <a href="#">Usluge</a>
+        <a href="#">Kontakt</a>
+      </div>
+    </div>
+
+    <div class="nl-hero">
+      <div class="nl-issue">Broj #01 — Travanj 2025</div>
+      <div class="nl-hero-title">Dobrodošli u Legos<br>Web Dizajn glasnik</div>
+      <div class="nl-hero-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor ut labore et dolore magna aliqua — vaš digitalni prostor, vaša priča.</div>
+      <a class="nl-cta" href="#">Pročitaj više →</a>
+    </div>
+
+    <div class="nl-divider"></div>
+
+    <div class="nl-section">
+      <div class="nl-section-label">Vijesti & Projekti</div>
+      <div class="nl-cards">
+        <div class="nl-card">
+          <div class="nl-card-tag">Web dizajn</div>
+          <div class="nl-card-title">Placeholder naslov projekta</div>
+          <div class="nl-card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+        </div>
+        <div class="nl-card" style="border-color:#e09f3e;">
+          <div class="nl-card-tag" style="color:#e09f3e;">SEO & Marketing</div>
+          <div class="nl-card-title">Drugi placeholder naslov</div>
+          <div class="nl-card-body">Ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud.</div>
+        </div>
+        <div class="nl-card" style="border-color:#101923;">
+          <div class="nl-card-tag" style="color:#101923;">Razvoj</div>
+          <div class="nl-card-title">Treći placeholder naslov</div>
+          <div class="nl-card-body">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</div>
+        </div>
+        <div class="nl-card" style="border-color:#00749c;">
+          <div class="nl-card-tag">Analitika</div>
+          <div class="nl-card-title">Četvrti placeholder</div>
+          <div class="nl-card-body">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nl-section" style="background:#f9f7f4;">
+      <div class="nl-section-label">Istaknuti sadržaj</div>
+      <div class="nl-feature">
+        <div class="nl-feat-icon">
+          <i class="ti ti-bolt" style="color:#e09f3e;font-size:16px;" aria-hidden="true"></i>
+        </div>
+        <div>
+          <div class="nl-feat-title">Placeholder naslov tipa</div>
+          <div class="nl-feat-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam nostrud exercitation.</div>
+        </div>
+      </div>
+      <div class="nl-feature" style="margin-top:18px;">
+        <div class="nl-feat-icon" style="background:#358397;">
+          <i class="ti ti-layout" style="color:#f5f5f5;font-size:16px;" aria-hidden="true"></i>
+        </div>
+        <div>
+          <div class="nl-feat-title">Drugi istaknuti naslov</div>
+          <div class="nl-feat-body">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nl-quote">
+      <div class="nl-quote-mark">"</div>
+      <div class="nl-quote-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</div>
+      <div class="nl-quote-attr">— Placeholder citata, Legos Web Dizajn</div>
+    </div>
+
+    <div class="nl-footer">
+      <div class="nl-footer-top">
+        <div>
+          <div class="nl-bar"></div>
+          <div class="nl-bar2"></div>
+          <div class="nl-footer-brand" style="margin-top:10px;">
+            Legos Web Dizajn<br>
+            Osijek, Hrvatska<br>
+            info@legos.hr
+          </div>
+        </div>
+        <div class="nl-footer-links">
+          <a href="#">Odjava pretplate</a>
+          <a href="#">Upravljaj emailom</a>
+          <a href="#">Politika privatnosti</a>
+          <a href="#">Kontakt</a>
+        </div>
+      </div>
+      <div class="nl-footer-bottom">
+        <div class="nl-footer-copy">© 2025 Legos Web Dizajn. Sva prava pridržana.</div>
+        <div style="display:flex;gap:8px;">
+          <div style="width:20px;height:20px;border-radius:50%;background:#ffffff15;display:flex;align-items:center;justify-content:center;">
+            <i class="ti ti-brand-instagram" style="color:#f5f5f540;font-size:11px;" aria-hidden="true"></i>
+          </div>
+          <div style="width:20px;height:20px;border-radius:50%;background:#ffffff15;display:flex;align-items:center;justify-content:center;">
+            <i class="ti ti-brand-linkedin" style="color:#f5f5f540;font-size:11px;" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
