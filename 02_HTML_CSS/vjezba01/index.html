@@ -7,27 +7,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja prva stranica</title>
+    <title>Svemir: Tajne Svemira</title>
     <style>
+        /* CSS STILOVI */
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
+            background-color: #05070a;
+            color: #d1d1d1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
             line-height: 1.6;
         }
-        h1 {
-            color: #2c3e50;
+        header {
+            background: linear-gradient(to bottom, #1a1a2e, #05070a);
+            padding: 50px 20px;
+            text-align: center;
         }
+        h1 { color: #4a90e2; font-size: 3em; margin: 0; }
+        
+        main { max-width: 800px; margin: 20px auto; padding: 20px; }
+        
+        section { background: #161b22; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { border: 1px solid #30363d; padding: 12px; text-align: left; }
+        th { background-color: #21262d; color: #4a90e2; }
+        
+        button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover { background-color: #357abd; }
+        
+        footer { text-align: center; padding: 30px; font-size: 0.9em; color: #666; }
     </style>
 </head>
 <body>
 
-    <h1>Dobrodošli na moju web stranicu</h1>
-    
-    <p>Ovo je osnovni primjer HTML dokumenta koji prikazuje kako strukturirati sadržaj.</p>
-    
-    <p>Možete kliknuti na sljedeći link kako biste saznali više o web tehnologijama:</p>
-    
-    <a href="https://www.w3schools.com" target="_blank">Posjetite W3Schools</a>
+    <header>
+        <h1>Beskrajni Svemir</h1>
+        <p>Istražite misterije našeg kozmosa</p>
+    </header>
+
+    <main>
+        <section id="solarni-sustav">
+            <h2>Naš Solarni sustav</h2>
+            <p>Sunce dominira našim sustavom, držeći sve planete na okupu svojom gravitacijom.</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Planeta</th>
+                        <th>Vrsta</th>
+                        <th>Udaljenost od Sunca</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Merkur</td>
+                        <td>Stjenoviti</td>
+                        <td>57.9 milijuna km</td>
+                    </tr>
+                    <tr>
+                        <td>Zemlja</td>
+                        <td>Stjenoviti</td>
+                        <td>149.6 milijuna km</td>
+                    </tr>
+                    <tr>
+                        <td>Jupiter</td>
+                        <td>Plinoviti div</td>
+                        <td>778.5 milijuna km</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="galaktike">
+            <h2>Galaktike</h2>
+            <p>Galaktike su ogromni sustavi zvijezda, plinova i tamne materije. Naša galaktika, <b>Mliječna staza</b>, sadrži stotine milijardi zvijezda.</p>
+        </section>
+
+        <section>
+            <h2>Prijavite se za novosti</h2>
+            <form>
+                <input type="email" placeholder="Unesite e-mail" style="padding: 10px; width: 250px;">
+                <button type="button">Pretplati se</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026. Astronomski informator - Sva prava pridržana.</p>
+    </footer>
 
 </body>
 </html>, initial-scale=1.0">
