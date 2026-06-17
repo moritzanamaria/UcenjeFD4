@@ -1,0 +1,31 @@
+:root{
+    --pozadina: #ecf0f1;
+    --primarna-boja: #2c3e50;
+    --pozadina-container: #f51111
+}
+
+body{
+    background-color: var(--pozadina);
+}
+
+
+.container{
+    width: 90%;
+    border: 1px solid black;
+    margin: auto;
+    outline-style: solid;
+    outline-width: 2px;
+    /* outline-offset: 10px; */
+    outline-color: var(--primarna-boja);
+
+    /* padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem; */
+
+    padding: 1rem;
+
+    /* padding: 1rem 2rem 3rem 4rem; */
+
+    background-color: var(--pozadina-container);
+}
