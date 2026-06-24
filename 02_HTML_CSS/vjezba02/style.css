@@ -8,7 +8,11 @@ body{
     background-color: var(--pozadina);
 }
 
-
+span{
+    font-weight: bold;
+    color: aliceblue;
+    text-transform: uppercase;
+}
 .container{
     width: 90%;
     border: 1px solid black;
