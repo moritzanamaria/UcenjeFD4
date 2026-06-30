@@ -1,0 +1,172 @@
+html{
+    background-color: #bdbdbd;
+}
+body {
+    background-color: #fffefe;
+    margin: 2rem;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+}
+
+h1 {
+    color: #284456;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 80px;
+    line-height: 90px;
+    text-align: center;
+    text-shadow: 1px 1px 3px #999999;
+    letter-spacing: 3px;
+    padding: 2rem 0rem;
+    margin: 2rem;
+}
+
+h2 {
+    margin: 2rem;
+    padding: 3rem 1rem;
+    color: #8d8d8d;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 35px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: underline orange;
+    text-underline-offset: 20px;
+}
+
+h3{
+    margin: 2rem;
+    padding: 1rem 0rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #020609;
+}
+
+p {
+    padding: 1rem 0rem;
+    margin: 2rem;
+    color: #020609;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: justify;
+    letter-spacing: 0;
+}
+
+div{
+    margin: 0 2rem;
+    padding: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.dotted {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+mark {
+    background-color: #f1bf41a1;
+}
+
+figure {
+    margin: 0 3rem;
+    border-style: solid;
+    border-width: 1rem;
+    border-color: #dddddd;
+    background-color: #ddd;
+    object-fit: fill;
+}
+
+ img { 
+    width: 100%;
+ } 
+
+figcaption {
+    text-align: center;
+    font-size: 15px;
+}
+
+ol {
+    border-left: 10px solid #4a9ccf;
+    background-color: #dddddd;
+    padding: 2rem 5rem;
+    margin: 2rem;
+    font-size: 25px;
+}
+
+
+.kod {
+    font-size: 20px;
+    background-color: #162630;
+    color: #dddddd;
+    border-left: 10px solid rgb(243, 186, 64);
+    border-radius: 1rem;
+    margin: 2rem;
+    letter-spacing: 3px;
+    line-height: 40px
+}
+
+.horizontalna {
+    display: grid;
+    column-gap: 2px;
+    background-color: rgb(197, 193, 193);
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.horizontalna dt {
+    font-size: 30px;
+    text-align: center;
+    grid-column: 1;
+    color: #4a9ccf;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.horizontalna dd {
+    font-size: 20px;
+    font-family: monospace;
+    grid-column: 2;
+}
+
+blockquote {
+    padding: 1rem;
+    margin: 2rem;
+    background-color: rgba(255, 0, 0, 0.189);
+    border-left: 10px solid red;
+    min-width: 100%;
+}
+
+blockquote pre {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    max-width: 100%;
+}
+
+footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    border-top: 2px dashed #ddd;
+    padding-top: 2rem;
+}
+
+.overline {
+    text-decoration: overline orange;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 10px;
+    width: 10px;
+}
+
+.prava {
+    line-height: 90px;
+}
+
+ruby rt {
+    color: #c7c6c6;
+    padding-bottom: 5px;
+}
