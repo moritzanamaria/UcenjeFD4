@@ -1,10 +1,12 @@
 html{
     background-color: #bdbdbd;
+    margin: 1rem auto;
+
 }
 body {
     background-color: #fffefe;
     margin: 2rem;
-    padding: 2rem 1rem;
+    padding: 2rem;
     border-radius: 1rem;
 }
 
@@ -12,7 +14,7 @@ h1 {
     color: #284456;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bolder;
-    font-size: 80px;
+    font-size: 70px;
     line-height: 90px;
     text-align: center;
     text-shadow: 1px 1px 3px #999999;
@@ -21,6 +23,7 @@ h1 {
     margin: 2rem;
 }
 
+
 h2 {
     margin: 2rem;
     padding: 3rem 1rem;
@@ -28,7 +31,7 @@ h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     font-variant: small-caps;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 60px;
     text-align: center;
     text-decoration: underline orange;
@@ -128,16 +131,18 @@ ol {
 
 .horizontalna dd {
     font-size: 20px;
+    line-height: 30px;
     font-family: monospace;
     grid-column: 2;
 }
+.blockquote{}
 
 blockquote {
     padding: 1rem;
-    margin: 2rem;
-    background-color: rgba(255, 0, 0, 0.189);
+    margin: 0 2rem;
+    background-color: #ff000030;
     border-left: 10px solid red;
-    min-width: 100%;
+    min-width: 100%; 
 }
 
 blockquote pre {
