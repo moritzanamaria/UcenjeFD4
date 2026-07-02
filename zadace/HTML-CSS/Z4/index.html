@@ -1,34 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Zadaca.png</title>
 </head>
+
 <body>
-  <div>
-      <h1>
-        Tko pjeva zlo ne misli
-    </h1>
-    
-    <h4>
-        Dnevnik malog Perice
-    </h4>
+    <div class="naslovi">
+        <h1>
+            Tko pjeva zlo ne misli
+        </h1>
+
+        <h4>
+            Dnevnik malog Perice
+        </h4>
 
     </div>
-    <div>
-    <h5 style="background-color: brown;">
-        Radnja Likovi Piši nam
+
+    <h5>
+        <pre>Radnja       Likovi        Piši nam</pre>
     </h5>
-    </div>
-    
-    <div>
+    <div class="prvi">
         <h3>O čemu se radi?</h3>
-        <a class="ytp-small-redirect" target="_blank" href="https://www.youtube.com" aria-label="Posjetite YouTube i potražite još videozapisa"><svg fill="#fff" height="100%" viewBox="0 0 24 24" width="100%"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"></path></svg></a>
-        <p>Radnja filma smještena je u Zagreb sredinom tridesetih godina 20.stoljeća.</p>
-        <p>Sve se vrti oko obitelji <i>Šafranek</i> i njihovih bračnih zgoda i nezgoda, začinjenih pjesmom i izletima u Maksimir</p>
-    <cite> Ljubim ruke milostiva!</cite>
 
-</div>
+        <div class="uvod">
+            <div class="tekst">
+                <p>Radnja filma smještena je u <b>Zagreb</b> sredinom tridesetih godina 20. stoljeća.</p>
+                <p>Sve se vrti oko obitelji <i>Šafranek</i> i njihovih bračnih zgoda i nezgoda, začinjenih pjesmom i
+                    izletima u Maksimir.</p>
+                <blockquote>"Ljubim ruke, milostiva!"</blockquote>
+            </div>
+
+            <iframe src="https://www.youtube.com/embed/ofY4NXA6mcQ" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    <div class="tablica">
+        <table>
+            <h3>Glavni likovi</h3>
+            <colgroup>
+                <col style="width: 25%;">
+                <col style="width: 25%;">
+                <col style="width: 50%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Ime</th>
+                    <th>Uloga</th>
+                    <th>Osobina</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>Franjo</td>
+                    <td>Otac</td>
+                    <td>Voli gemišt i politku</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>Majka</td>
+                    <td>Romantična duša</td>
+                </tr>
+                <tr>
+                    <td>Perica</td>
+                    <td>Sin</td>
+                    <td>Promatrač</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="forma">
+        <h3>Pošalji pismo u Gornji Grad</h3>
+        <form action="https://origo.hr" method="get">
+
+            <div class="podaci">
+                <label for="ime">Tvoje ime</label>
+                <input type="text" name="ime" id="ime" placeholder="Npr. Mina">
+
+                <label for="poruka">Poruka</label>
+                <textarea name="poruka" id="poruka" rows="6"></textarea>
+            </div>
+
+            <button type="submit"><b>Pošalji golubom</b></button>
+
+        </form>
+    </div>
 </body>
+<hr>
+<footer>
+    &copy; <span style="font-size: smaller;">2025.</span> Edunova
+</footer>
+
 </html>

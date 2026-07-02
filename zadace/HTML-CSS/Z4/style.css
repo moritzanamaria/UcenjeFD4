@@ -1,0 +1,162 @@
+body {
+    background-color: antiquewhite;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+h1 {
+   color: darkred;
+   text-align: center; 
+}
+
+h4 {
+    color: #959595;
+    font-style: italic;
+    text-align: center;
+}
+
+.naslovi {
+    border-bottom: 2px solid darkred;
+    background-color: antiquewhite;
+}
+
+h5 {
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px;
+}
+
+pre {
+    font-family: serif;
+}
+
+.prvi {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #979797;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-family: serif;
+    border-left: 4px solid darkred;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    padding-left: 10px;
+}
+
+.uvod {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.tekst {
+    flex: 1;
+}
+
+.tekst p {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    width: 150px;
+}
+
+.uvod iframe {
+    flex: 1.5;
+    max-width: 550px;
+    height: 315px;
+    border-radius: 8px;
+    padding-bottom: 1rem;
+}
+
+blockquote {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-left: 4px solid #b0b0b0;
+    margin: 1rem 0;
+    display: inline-block;
+    font-style: italic;
+}
+
+.tablica {
+    background-color: white;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #979797;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: darkred;
+    color: white;
+    text-align: left;
+    height: 50px;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table, th, td {
+    border: 1px solid #ededed;
+    padding: 0.5rem;
+}
+
+.forma {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #979797;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+}
+
+.podaci {
+    display: flex;
+    flex-direction: column;
+}
+
+.podaci label {
+    font-weight: bold;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.podaci input,
+.podaci textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+button {
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+}
+
+footer {
+    color: #757575;
+    text-align: center;
+    margin: 1rem auto;
+    padding-top: 2rem;
+}
