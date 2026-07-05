@@ -1,81 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="hr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DZ 1-2</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
  <div>
-    <h1>
-        POVIJEST HTML-A
-    </h1>
-
-    <h2>
-        Od jednostavnog teksta do modernog Weba
-    </h2>
-
+    <h1>POVIJEST HTML-A</h1>
+    <h2>Od jednostavnog teksta do modernog Weba</h2>
     <p>
         Sve je počelo 1989. godine u CERN-u. <span class="dotted">Tim Berners-Lee</span> je osmislio sustav koji bi
-        istraživačima omogućio
-        dijeljenje dokumenata. Taj sustav postao je poznat kao <mark> World Wide Web.</mark>
+        istraživačima omogućio dijeljenje dokumenata. Taj sustav postao je poznat kao <mark> World Wide Web.</mark>
     </p>
-
 
     <figure>
         <img src="img.png" alt="Otac weba: Sir Tim Berners-Lee">
-        <figcaption>
-            Otac weba: Sir Tim Berners-Lee
-        </figcaption>
+        <figcaption>Otac weba: Sir Tim Berners-Lee</figcaption>
     </figure>
 
     <p>
-        Jezik koji je definirao strukturu tih dokumenata nazvan je <span style="color: orange;">HTML</span> (HyperText
-        Markup Language). Njegova osnovna
+        Jezik koji je definirao strukturu tih dokumenata nazvan je <span class="text-orange">HTML</span> (HyperText Markup Language). Njegova osnovna
         svrha bila je semantički opisati strukturu dokumenta, a ne njegov izgled.
     </p>
 </div>
 
-    <hr>
+<hr>
 <div>
-    <h3>
-        Ključne verzije
-    </h3>
-
+    <h3>Ključne verzije</h3>
     <ol>
-        <li>
-           <strong style="color: orange;">HTML 1.0 (1991)</strong> <br>
-            Prva neslužbena verzija. Sadržavala je samo 18 tagova.
-        </li>
-        <li>
-            <strong style="color: orange;">HTML 2.0 (1995) </strong> <br>
-            Prvi službeni standard (RFC 1866).
-        </li>
-        <li>
-            <strong style="color: orange;"> HTML 3.2 (1997) </strong> <br>
-            Uvedene tablice i apleti. "Rat preglednika" je bio u punom jeku.
-        </li>
-        <li>
-            <strong style="color: orange;"> HTML 4.01 (1999) </strong> <br>
-             Dominantna verzija gotovo desetljeće. Odvajanje stila (CSS) od sadržaja.
-        </li>
-        <li>
-            <strong style="color: orange;"> HTML5 (2014) </strong> <br>
-             Revolucija. Multimedija bez dodataka ("video", "audio"), semantički elementi.
-        </li>
+        <li><strong class="text-orange">HTML 1.0 (1991)</strong> <br> Prva neslužbena verzija. Sadržavala je samo 18 tagova.</li>
+        <li><strong class="text-orange">HTML 2.0 (1995)</strong> <br> Prvi službeni standard (RFC 1866).</li>
+        <li><strong class="text-orange">HTML 3.2 (1997)</strong> <br> Uvedene tablice i apleti. "Rat preglednika" je bio u punom jeku.</li>
+        <li><strong class="text-orange">HTML 4.01 (1999)</strong> <br> Dominantna verzija gotovo desetljeće. Odvajanje stila (CSS) od sadržaja.</li>
+        <li><strong class="text-orange">HTML5 (2014)</strong> <br> Revolucija. Multimedija bez dodataka ("video", "audio"), semantički elementi.</li>
     </ol>
 </div>
 
 <div>
-    <h3>
-        Struktura Dokumenta
-    </h3>
-
-    <p>
-        Osnovna struktura HTML5 dokumenta izgleda ovako:</p>
+    <h3>Struktura Dokumenta</h3>
+    <p>Osnovna struktura HTML5 dokumenta izgleda ovako:</p>
     <pre class="kod">
     &lt;!DOCTYPE html&gt;
       &lt;html lang="hr"&gt;
@@ -83,65 +48,42 @@
          &lt;title&gt;Document&lt;/title&gt;
         &lt;/head&gt;
         &lt;body&gt;
-         &lt;p&gt; Pozdrav svijete! &lt;p&gt;
+         &lt;p&gt; Pozdrav svijete! &lt;/p&gt;
         &lt;/body&gt;
     &lt;/html&gt;
     </pre>
-
-    <p>
-    Da biste spremili ovaj kod, pritisnite <kbd> Ctrl + S </kbd> na tipkovnici.
-    </p>
+    <p>Da biste spremili ovaj kod, pritisnite <kbd> Ctrl + S </kbd> na tipkovnici.</p>
 </div>
+
 <div>
-    <h3>
-        Važni pojmovi
-    </h3>
-   
+    <h3>Važni pojmovi</h3>
     <dl class="horizontalna">
         <dt>HTTP</dt>
-       
         <dd>HyperText Transfer Protocol – protokol za prijenos podataka.</dd> 
-       
         <dt>URI</dt>
-       
         <dd>Uniform Resource Identifier – adresa resursa na webu.</dd>
     </dl>
 
-    <h3>
-        Filozofija Weba
-    </h3>
-    <div>
-        <blockquote>
-    <pre>
+    <h3>Filozofija Weba</h3>
+    <blockquote>
     Snaga Weba je u njegovoj univerzalnosti. Pristup svima, bez obzira 
     na invaliditet, ključni je aspekt.
-        
+    <br>
+    <br>
     <i> — Tim Berners-Lee</i>
-    </pre>
-    
-        
-        </blockquote>
-    </div>
-
-
+    </blockquote>
 
     <p>
         Danas HTML koristimo zajedno s <span class="overline">CSS</span>-<span class="overline">om</span> i JavaScriptom.
         Japanski naziv za Web: <ruby> 網 <rt> ami </rt></ruby> (Mreža).
-
     </p>
-
 </div>
 
-    <footer>
-        Autor stranice: <span style="color: orange;"> <b> Web Povjesničar </b> </span> <br>
-        Kontakt: <a href="mail">info@povijesthtml.org</a> <br>
-        22. Listopada 2023. <br>
-
-        <small class="prava"> &copy; Sva prava pridržana.</small>
-
-    </footer>
-
+<footer>
+    Autor stranice: <span class="text-orange"> <b> Web Povjesničar </b> </span> <br>
+    Kontakt: <a href="mailto:info@povijesthtml.org">info@povijesthtml.org</a> <br>
+    22. Listopada 2023. <br>
+    <small class="prava"> &copy; Sva prava pridržana.</small>
+</footer>
 </body>
-
 </html>

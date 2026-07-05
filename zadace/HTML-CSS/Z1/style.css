@@ -1,8 +1,8 @@
-html{
+html {
     background-color: #bdbdbd;
     margin: 1rem auto;
-
 }
+
 body {
     background-color: #fffefe;
     margin: 2rem;
@@ -12,9 +12,9 @@ body {
 
 h1 {
     color: #284456;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: serif;
     font-weight: bolder;
-    font-size: 70px;
+    font-size: 65px;
     line-height: 90px;
     text-align: center;
     text-shadow: 1px 1px 3px #999999;
@@ -23,12 +23,11 @@ h1 {
     margin: 2rem;
 }
 
-
 h2 {
     margin: 2rem;
     padding: 3rem 1rem;
     color: #8d8d8d;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: serif;
     font-style: italic;
     font-variant: small-caps;
     font-size: 30px;
@@ -38,11 +37,11 @@ h2 {
     text-underline-offset: 20px;
 }
 
-h3{
+h3 {
     margin: 2rem;
     padding: 1rem 0rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
+    font-family: sans-serif;
+    font-size: 25px;
     font-weight: 700;
     color: #020609;
 }
@@ -51,19 +50,17 @@ p {
     padding: 1rem 0rem;
     margin: 2rem;
     color: #020609;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    line-height: 40px;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 25px;
     text-align: justify;
-    letter-spacing: 0;
 }
 
-div{
+div {
     margin: 0 2rem;
     padding: 1rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: sans-serif;
 }
-
 
 .dotted {
     text-decoration: underline;
@@ -72,6 +69,10 @@ div{
 
 mark {
     background-color: #f1bf41a1;
+}
+
+.text-orange {
+    color: orange;
 }
 
 figure {
@@ -83,9 +84,9 @@ figure {
     object-fit: fill;
 }
 
- img { 
+img {
     width: 100%;
- } 
+}
 
 figcaption {
     text-align: center;
@@ -97,9 +98,8 @@ ol {
     background-color: #dddddd;
     padding: 2rem 5rem;
     margin: 2rem;
-    font-size: 25px;
+    font-size: 20px;
 }
-
 
 .kod {
     font-size: 20px;
@@ -108,14 +108,14 @@ ol {
     border-left: 10px solid rgb(243, 186, 64);
     border-radius: 1rem;
     margin: 2rem;
-    letter-spacing: 3px;
-    line-height: 40px
+    letter-spacing: 2px;
+    line-height: 30px;
 }
 
 .horizontalna {
     display: grid;
     column-gap: 2px;
-    background-color: rgb(197, 193, 193);
+    background-color: #c5c1c1;
     padding: 2rem;
     margin: 2rem;
 }
@@ -135,27 +135,23 @@ ol {
     font-family: monospace;
     grid-column: 2;
 }
-.blockquote{}
 
 blockquote {
     padding: 1rem;
     margin: 0 2rem;
     background-color: #ff000030;
+    box-sizing: border-box;
     border-left: 10px solid red;
-    min-width: 100%; 
-}
-
-blockquote pre {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
+    font-family: serif;
+    font-size: 20px;
     max-width: 100%;
 }
 
 footer {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: sans-serif;
     text-align: center;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 25px;
     border-top: 2px dashed #ddd;
     padding-top: 2rem;
 }
