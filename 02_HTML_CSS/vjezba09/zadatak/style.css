@@ -1,0 +1,77 @@
+body{
+    background-color: ;
+}
+
+main{
+    gap: 10px;
+    padding: 10px;
+}
+
+.a, .b, .f{
+    display: none;
+}
+
+.panel {
+    padding: 1.2em;
+    text-align: center;
+}
+
+.a {
+    grid-area: a;
+    background-color: bisque;
+}
+
+.b {
+    grid-area: b;
+    background-color: cadetblue;
+}
+
+.c {
+    grid-area: c;
+    background-color: thistle;
+}
+
+.d {
+    grid-area: d;
+    background-color: rosybrown;
+}
+
+
+.e {
+    grid-area: e;
+    background-color: rgb(71, 71, 112);
+}
+
+
+.f {
+    grid-area: f;
+    background-color: rgb(83, 31, 31);
+}
+
+@media (min-width: 600px){
+    main{
+        display: grid;
+        grid-template-areas: 
+        "b b"
+        "c f";
+    }
+    .a, .d, .e{
+        display: none;
+    }
+    .b, .c, .f {
+        display: block;
+    }
+}
+
+@media (min-width: 1000px) {
+    main {
+        display: grid;
+        grid-template-areas: 
+            "a b b"
+            "c d e"
+            "f f f";
+    }
+    .a, .b, .c, .d, .e, .f {
+        display: block;
+    }
+}

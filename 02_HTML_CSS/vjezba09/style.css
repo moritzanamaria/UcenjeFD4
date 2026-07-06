@@ -1,0 +1,113 @@
+#upute{
+    display: none;
+}
+
+body {
+    background-color: aqua
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0.8rem;
+    justify-content: baseline;
+}
+
+ul li {
+    padding: 0.8rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.panel {
+    /* border: 1px solid black; */
+    padding: 1.2em;
+    text-align: justify;
+}
+
+.a {
+    grid-area: a;
+    background-color: bisque;
+}
+
+.b {
+    grid-area: b;
+    background-color: cadetblue;
+}
+
+.c {
+    grid-area: c;
+    background-color: thistle;
+}
+
+.d {
+    grid-area: d;
+    background-color: rosybrown;
+}
+header::after{
+    content: 'MOBITEL';
+}
+
+@media (min-width: 500px) and (max-width: 799px) {
+    header::after{
+        content: 'TABLET'
+    }
+    body {
+        background-color: purple;
+    }
+
+    main {
+        display: grid;
+        grid-template-areas:
+            "a b"
+            "c c"
+            "d d";
+    }
+}
+
+@media (min-width: 800px){
+
+    header::after{
+        content: 'DESKTOP';
+    }
+
+    body{
+        background-color: chartreuse;
+    }
+
+    main{
+        display: grid;
+        grid-template-areas:
+        "a b c"
+        "d d ."
+        ;
+    }
+
+}
+
+@media print{
+    header{
+        display: none;
+    }
+
+    #upute{
+        display: block;
+        text-align: center;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    ul li a{
+        background-color: black;
+        color: white;
+    }
+}
