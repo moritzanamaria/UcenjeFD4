@@ -57,13 +57,12 @@ h3 {
 }
 
 .tekst {
-    flex: 1;
+    flex: 0.2;
 }
 
 .tekst p {
     line-height: 1.5;
     margin-bottom: 1rem;
-    width: 150px;
 }
 
 .uvod iframe {
