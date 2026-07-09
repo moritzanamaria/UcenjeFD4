@@ -1,0 +1,225 @@
+body {
+    background-color: #212727;
+    color: whitesmoke;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    color: greenyellow;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 0.8rem;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0.8rem;
+}
+
+
+.naslov {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(slika.jpg);
+    background-size: cover;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+button{
+    background-color: greenyellow;
+    color: black;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+h2{
+    color:greenyellow;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 35px;
+    height: 3px;
+    background-color: antiquewhite;
+    border-radius: 2px;
+}
+
+.ponuda{
+    background-color: #212727;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px; 
+}
+
+
+table {
+    max-width: 800px;
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    color: white;
+    text-align: center;
+}
+
+thead th {
+    background-color: greenyellow;
+    color: #212727;
+    padding: 15px;
+    font-weight: bold;
+      border: 1px solid #797979;
+}
+
+tbody td {
+    padding: 15px;
+    border: 1px solid #797979;
+    background-color: #3e4949;
+  
+}
+
+.paketi {
+    background-color: #3e4747;
+}
+.kartice-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.kartica {
+    background-color: #2b3333;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    border: 1px solid #3e4747;
+}
+
+.kartica p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.video {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.kontakt {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 10%;
+    align-items: flex-start;
+}
+
+.adresa {
+    flex: 1;
+    max-width: 400px;
+}
+
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.contact-form input, 
+.contact-form select, 
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #394343;
+    color: white;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+    font-family: sans-serif;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: black;
+    padding: 15px 5%;
+    border-top: 1px solid greenyellow;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: #8a9292;
+    font-size: 0.9rem;
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: #8a9292;
+}
