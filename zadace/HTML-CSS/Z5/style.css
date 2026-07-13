@@ -114,7 +114,9 @@ tbody td {
 
 .paketi {
     background-color: #3e4747;
+    padding: 1rem;
 }
+
 .kartice-container {
     display: flex;
     justify-content: center;
