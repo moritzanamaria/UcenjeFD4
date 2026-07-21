@@ -54,11 +54,42 @@ document.getElementById('izvedi').addEventListener('click', () => {
     }
     if (zadatak === '2')
         //pocinje drugi zadatak
-        if (!cString) {
-            rezultat.innerHTML = 'Unesite vrijednost C'
+
+        if (!aString) {
+            rezultat.innerHTML = 'Unesite vrijednost A'
             rezultat.style.color = 'red'
             return
         }
+
+    const a = Number(aString)
+
+    if (!a) {
+        rezultat.innerHTML = 'A nije broj'
+        rezultat.style.color = 'red'
+        return
+    }
+
+
+    if (!bString) {
+        rezultat.innerHTML = 'Unesite vrijednost B'
+        rezultat.style.color = 'red'
+        return
+    }
+
+    const b = Number(bString)
+
+    if (!b) {
+        rezultat.innerHTML = 'B nije broj'
+        rezultat.style.color = 'red'
+        return
+    }
+
+
+    if (!cString) {
+        rezultat.innerHTML = 'Unesite vrijednost C'
+        rezultat.style.color = 'red'
+        return
+    }
 
     const c = Number(cString)
 
@@ -68,32 +99,24 @@ document.getElementById('izvedi').addEventListener('click', () => {
         return
     }
 
-
-    if (!dString) {
-        rezultat.innerHTML = 'Unesite vrijednost D'
-        rezultat.style.color = 'red'
-        return
-    }
-
-    const d = Number(dString)
-
-    if (!d) {
-        rezultat.innerHTML = 'D nije broj'
-        rezultat.style.color = 'red'
-        return
-    }
-
-    //rezultat.innerHTML = c > d ? c : d
-    if (c === d) {
-        rezultat.innerHTML = 'Jednaki su'
-    } else if (c > d) {
-        rezultat.innerHTML = c
+    if (a === b && b === c) {
+        rezultat.innerHTML = 'Svi su jednaki';
+    } else if (a > b && a > c) {
+        rezultat.innerHTML = a
+    } else if (b > a && b > c) {
+        rezultat.innerHTML = b
     } else {
-        rezultat.innerHTML = d
+        rezultat.innerHTML = c
     }
+
     rezultat.style.color = 'green'
 
     //zavrsava drugi zadatak
+
+    //pocinje treci zadatak
+
+    //zavrsava treci zadatak
+
     //zavrsava click
 })
 
