@@ -113,7 +113,78 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
     //zavrsava drugi zadatak
 
+     if (zadatak === '3')
     //pocinje treci zadatak
+
+    if (!aString) {
+        rezultat.innerHTML = 'Unesite vrijednost A'
+        rezultat.style.color = 'red'
+        return
+    }
+
+    const a = Number(aString)
+
+    if (!a) {
+        rezultat.innerHTML = 'A nije broj'
+        rezultat.style.color = 'red'
+        return
+    }
+
+
+    if (!bString) {
+        rezultat.innerHTML = 'Unesite vrijednost B'
+        rezultat.style.color = 'red'
+        return
+    }
+
+    const b = Number(bString)
+
+    if (!b) {
+        rezultat.innerHTML = 'B nije broj'
+        rezultat.style.color = 'red'
+        return
+    }
+
+
+    if (!cString) {
+        rezultat.innerHTML = 'Unesite vrijednost C'
+        rezultat.style.color = 'red'
+        return
+    }
+
+    const c = Number(cString)
+
+    if (!c) {
+        rezultat.innerHTML = 'C nije broj'
+        rezultat.style.color = 'red'
+        return
+    }
+
+    if (!dString) {
+        rezultat.innerHTML = 'Unesite vrijednost D'
+        rezultat.style.color = 'red'
+        return
+    }
+
+    const d = Number(dString)
+
+    if (!d) {
+        rezultat.innerHTML = 'D nije broj'
+        rezultat.style.color = 'red'
+        return
+    }
+
+
+    if (a < b && a < c && a < d) {
+        rezultat.innerHTML = a
+    } else if (b < a && b < c && b < d) {
+        rezultat.innerHTML = b
+    } else if (c < a && c < b && c < d) {
+        rezultat.innerHTML = c
+    } else {
+        rezultat.innerHTML = d
+    }
+    rezultat.style.color = 'green'
 
     //zavrsava treci zadatak
 
