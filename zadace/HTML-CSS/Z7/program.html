@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurikulum</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">FPV Akademija</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">FPV Akademija</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Početna</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="program.html">Kurikulum</a></li>
+                        <li class="nav-item"><a class="nav-link" href="kontakt.html">Prijava</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5 flex-grow-1">
+        <div class="row text-center mb-5">
+            <div class="col-12">
+                <h2>Kurikulum i program edukacije</h2>
+                <p class="lead">Detaljan pregled modula, opreme i rasporeda predavanja.</p>
+            </div>
+        </div>
+
+        <div class="row mb-5 justify-content-center">
+            <div class="col-12 col-md-8">
+                <div class="ratio ratio-16x9 shadow rounded overflow-hidden">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mb-5">
+            <div class="col-12 col-lg-7">
+                <h3 class="mb-3">Moduli tečaja</h3>
+                <div class="accordion" id="kurikulumAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                Modul 1: Sastavljanje drona <span class="badge bg-primary ms-2">Novo</span>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#kurikulumAccordion">
+                            <div class="accordion-body">
+                                <p>Detaljna izrada i lemljenje komponenti.</p>
+                                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#predavacModal">
+                                    Predavači
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                Modul 2: Sigurnost <span class="badge bg-success ms-2">Napredno</span>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#kurikulumAccordion">
+                            <div class="accordion-body">
+                                <p>Pravila letenja i zakoni zračnog prometa.</p>
+                                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#predavacModal">
+                                    Predavači
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                Modul 3: Pilotiranje <span class="badge bg-warning text-dark ms-2">Osnovno</span>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#kurikulumAccordion">
+                            <div class="accordion-body">
+                                <p>Upravljanje letjelicom kroz FPV naočale.</p>
+                                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#predavacModal">
+                                    Predavači
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-5">
+                <h3 class="mb-3">Potrebna oprema</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">Radio upravljač</li>
+                    <li class="list-group-item">FPV naočale</li>
+                    <li class="list-group-item">Baterije i punjač</li>
+                    <li class="list-group-item">Alat za lemljenje</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h3 class="mb-3">Termini predavanja</h3>
+                <div class="table-responsive" style="max-height: 200px; overflow-y: auto;">
+                    <table class="table table-striped mb-0">
+                        <thead class="table-dark sticky-top">
+                            <tr>
+                                <th>Grupa</th>
+                                <th>Termin</th>
+                                <th>Lokacija</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Grupa 1</td><td>Ponedjeljak 18:00</td><td>Zagreb</td></tr>
+                            <tr><td>Grupa 2</td><td>Utorak 18:00</td><td>Split</td></tr>
+                            <tr><td>Grupa 3</td><td>Srijeda 18:00</td><td>Rijeka</td></tr>
+                            <tr><td>Grupa 4</td><td>Četvrtak 18:00</td><td>Osijek</td></tr>
+                            <tr><td>Grupa 5</td><td>Petak 18:00</td><td>Zadar</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="predavacModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Detalji o predavačima</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Predavači su certificirani FPV piloti i stručnjaci za elektroniku sa višegodišnjim iskustvom.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 FPV Akademija. Sva prava pridržana.</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
