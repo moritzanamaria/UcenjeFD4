@@ -32,7 +32,7 @@ document.getElementById('izvedi').addEventListener('click', () => {
             return
         }
 
-        const b = Number(bString)
+
 
         if (!b) {
             rezultat.innerHTML = 'B nije broj'
@@ -61,7 +61,6 @@ document.getElementById('izvedi').addEventListener('click', () => {
             return
         }
 
-    const a = Number(aString)
 
     if (!a) {
         rezultat.innerHTML = 'A nije broj'
@@ -76,7 +75,6 @@ document.getElementById('izvedi').addEventListener('click', () => {
         return
     }
 
-    const b = Number(bString)
 
     if (!b) {
         rezultat.innerHTML = 'B nije broj'
@@ -91,7 +89,6 @@ document.getElementById('izvedi').addEventListener('click', () => {
         return
     }
 
-    const c = Number(cString)
 
     if (!c) {
         rezultat.innerHTML = 'C nije broj'
@@ -122,7 +119,6 @@ document.getElementById('izvedi').addEventListener('click', () => {
         return
     }
 
-    const a = Number(aString)
 
     if (!a) {
         rezultat.innerHTML = 'A nije broj'
@@ -137,7 +133,7 @@ document.getElementById('izvedi').addEventListener('click', () => {
         return
     }
 
-    const b = Number(bString)
+  
 
     if (!b) {
         rezultat.innerHTML = 'B nije broj'
@@ -152,7 +148,6 @@ document.getElementById('izvedi').addEventListener('click', () => {
         return
     }
 
-    const c = Number(cString)
 
     if (!c) {
         rezultat.innerHTML = 'C nije broj'
@@ -166,7 +161,6 @@ document.getElementById('izvedi').addEventListener('click', () => {
         return
     }
 
-    const d = Number(dString)
 
     if (!d) {
         rezultat.innerHTML = 'D nije broj'
