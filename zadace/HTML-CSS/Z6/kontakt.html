@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
+    <title>Prijava</title>
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/foundation.min.css">
 </head>
@@ -12,52 +12,67 @@
 <body>
 
 
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <ul class="menu">
-                <li class="menu-text">FPV Akademija</li>
-                <li><a href="index.html">Početna</a></li>
-                <li><a href="program.html">Kurikulum</a></li>
-                <li><a href="kontakt.html">Prijava</a></li>
-            </ul>
+    <div class="grid-container">
+        <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle></button>
+            <div class="title-bar-title">FPV Akademija</div>
         </div>
-    </div>
 
-    <h5>Prijavi se!</h5>
-    <form>
+        <div class="top-bar" id="main-menu">
+            <div class="top-bar-left">
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <li class="menu-text">FPV Akademija</li>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="program.html">Kurikulum</a></li>
+                    <li><a href="kontakt.html">Prijava</a></li>
+                </ul>
+            </div>
+        </div>
+
+
         <div class="grid-x grid-padding-x">
             <div class="large-12 cell">
-                <label>Ime i prezime</label>
-                <input type="text" placeholder="Ana Anić" />
+                <div class="callout warning">
+                    <p><strong>Prijave su u tijeku!</strong> Broj mjesta je ograničen, prijavi se na vrijeme.</p>
+                </div>
             </div>
-
-            <div class="large-12 cell">
-                <label>E-mail adresa</label>
-                <input type="text" placeholder="mail@mail.com" />
-            </div>
-
-            <div class="large-12 cell">
-                <label>Datum rođenja</label>
-                <input type="text" placeholder="01/01/1900">
-            </div>
-            <div class="large-6 medium-6 cell">
-
-                <input id="checkbox1" type="checkbox"><label for="checkbox1">Prihvaćam uvjete korištenja i pravila
-                    akademije.</label>
-
-            </div>
-            <div class="large-12 cell">
-                <a href="#" class="success button">Pošalji prijavu</a>
-            </div>
-
         </div>
 
+        <div class="grid-x grid-padding-x">
+            <div class="large-12 cell text-center">
+                <h2>Prijavi se!</h2>
+                <p class="lead">Ispuni obrazac ispod i osiguraj svoje mjesto u sljedećoj generaciji FPV Akademije.</p>
+            </div>
+        </div>
+        <form>
+            <div class="grid-x grid-padding-x">
+                <div class="large-12 cell">
+                    <label>Ime i prezime</label>
+                    <input type="text" placeholder="Ana Anić">
+                </div>
 
+                <div class="large-12 cell">
+                    <label>E-mail adresa</label>
+                    <input type="text" placeholder="mail@mail.com">
+                </div>
 
+                <div class="large-12 cell">
+                    <label>Datum rođenja</label>
+                    <input type="text" placeholder="01/01/1900">
+                </div>
 
+                <div class="large-6 medium-6 cell">
+                    <input id="checkbox1" type="checkbox">
+                    <label for="checkbox1">Prihvaćam uvjete korištenja i pravila akademije.</label>
+                </div>
 
-
-    </form>
+                <div class="large-6 cell">
+                    <a href="#" class="success button">Pošalji prijavu</a>
+                    <a href="#" class="alert button">Odustani</a>
+                </div>
+            </div>
+        </form>
+    </div>
 
 
 

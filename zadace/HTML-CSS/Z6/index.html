@@ -1,83 +1,118 @@
-
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FPV Akademija</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/foundation.min.css">
+</head>
+
 <body>
-<div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
-  <button class="menu-icon" type="button" data-toggle="main-menu"></button>
-  <div class="title-bar-title">Izbornik</div>
-</div>
+  <div class="grid-container">
+    <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">FPV Akademija</div>
+    </div>
 
-<div class="top-bar" id="main-menu">
-  <div class="top-bar-left">
-    <ul class="dropdown menu" data-dropdown-menu>
-      <li class="menu-text">FPV Akademija</li>
-      <li><a href="index.html">Početna</a></li>
-      <li><a href="program.html">Kurikulum</a></li>
-      <li><a href="kontakt.html">Prijava</a></li>
-    </ul>
-  </div>
-</div>
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell text-center">
-          <h1 id="banner">FPV Akademija- <br> Ovladajte nebom kroz tehnologiju</h1>
-        </div>
-        <div class="large-12 cell text-center"> 
-          <a class="button primary" href="#">Saznajte više o programu</a>
-        </div>
+    <div class="top-bar" id="main-menu">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">FPV Akademija</li>
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="program.html">Kurikulum</a></li>
+          <li><a href="kontakt.html">Prijava</a></li>
+        </ul>
       </div>
+    </div>
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell text-center">
+        <h1 id="banner">FPV Akademija- <br> Ovladajte nebom kroz tehnologiju</h1>
+      </div>
+      <div class="large-12 cell text-center">
+        <a class="button primary" href="#">Saznajte više o programu</a>
+      </div>
+    </div>
 
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <div class="callout">
-            <h3>Što je FPV Akademija?</h3>
-            <p>FPV (First Person View) Akademija je edukacijski program namijenjen svima koji žele naučiti upravljati dronovima, razumjeti njihovu elektroniku i razviti vještine potrebne za karijeru u tehnološkom svijetu. Naš cilj je pružiti polaznicima teorijsko znanje i praktično iskustvo.</p>
-           </div>
-        </div>
-      </div>  
-      </div>
-      
-          <div class="grid-x grid-padding-x">
-            <div class="large-4 medium-4 small-12 cell">
-              <div class="primary callout">
-                <p><strong>Tehničke vještine:</strong> <br> Naučite kako servisirati i sastaviti vlastitu letjelicu od nule.</p>
-              </div>
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell">
+        <div class="orbit" role="region" aria-label="Galerija dronova" data-orbit>
+          <div class="orbit-wrapper">
+            <div class="orbit-controls">
+              <button class="orbit-previous"><span class="show-for-sr">Prethodna slika</span>&#9664;&#xFE0E;</button>
+              <button class="orbit-next"><span class="show-for-sr">Sljedeća slika</span>&#9654;&#xFE0E;</button>
+            </div>
+            <ul class="orbit-container">
+              <li class="orbit-slide is-active">
+                <img class="orbit-image" src="img/drone1.jpg" alt="Dron u letu iznad polja">
+                <figcaption class="orbit-caption">FPV dron u brzom letu</figcaption>
+              </li>
+              <li class="orbit-slide">
+                <img class="orbit-image" src="img/drone2.jpg" alt="Dron u trkaćem poligonu">
+                <figcaption class="orbit-caption">Trening na simulatoru prije prvog leta</figcaption>
+              </li>
+              <li class="orbit-slide">
+                <img class="orbit-image" src="img/drone3.jpg" alt="Sastavljanje dronova na radionici">
+                <figcaption class="orbit-caption">Radionica sastavljanja i servisiranja</figcaption>
+              </li>
+            </ul>
           </div>
-        
-            <div class="large-4 medium-4 small-12 cell">
-              <div class="primary callout">
-                 <p><strong>Kognitivne sposobnosti:</strong> <br> Poboljšajte prostornu orijentaciju i brzinu reakcije kroz precizno upravljanje.</p>
-              </div>
-            </div>
-          
-        
-            <div class="large-4 medium-4 small-12 cell">
-              <div class="primary callout">
-                <p> <strong>STEM priprema:</strong> <br> Razumijevanje fizike leta i osnova elektrotehnike kroz praktičan rad.</p>
-              </div>
-            </div>
-            </div>
-            
-          
- 
-            
-          
+          <nav class="orbit-bullets">
+            <button data-slide="0"><span class="show-for-sr">Prva slika</span></button>
+            <button data-slide="1"><span class="show-for-sr">Druga slika</span></button>
+            <button data-slide="2"><span class="show-for-sr">Treća slika</span></button>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell">
+        <div class="callout">
+          <h3>Što je FPV Akademija?</h3>
+          <p class="lead">FPV (First Person View) Akademija je edukacijski program namijenjen svima koji žele naučiti
+            upravljati
+            dronovima, razumjeti njihovu elektroniku i razviti vještine potrebne za karijeru u tehnološkom svijetu. Naš
+            cilj je pružiti polaznicima teorijsko znanje i praktično iskustvo.</p>
+        </div>
+      </div>
+    </div>
 
-          
+    <div class="grid-x grid-padding-x">
+      <div class="large-4 medium-4 small-12 cell">
+        <div class="primary callout">
+          <p><strong>Tehničke vještine:</strong> <br> Naučite kako servisirati i sastaviti vlastitu letjelicu od nule.
+          </p>
+        </div>
+      </div>
 
-          
+      <div class="large-4 medium-4 small-12 cell">
+        <div class="primary callout">
+          <p><strong>Kognitivne sposobnosti:</strong> <br> Poboljšajte prostornu orijentaciju i brzinu reakcije kroz
+            precizno upravljanje.</p>
+        </div>
+      </div>
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+      <div class="large-4 medium-4 small-12 cell">
+        <div class="primary callout">
+          <p><strong>STEM priprema:</strong> <br> Razumijevanje fizike leta i osnova elektrotehnike kroz praktičan rad.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
 </html>

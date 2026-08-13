@@ -1,53 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Program edukacije</title>
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/foundation.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurikulum</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/foundation.min.css">
 </head>
+
 <body>
 
-   <div class="top-bar">
-        <div class="top-bar-left">
-            <ul class="menu">
-                <li class="menu-text">FPV Akademija</li>
-                <li><a href="index.html">Početna</a></li>
-                <li><a href="program.html">Kurikulum</a></li>
-                <li><a href="kontakt.html">Prijava</a></li>
-            </ul>
-        </div>
+
+  <div class="grid-container">
+    <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">FPV Akademija</div>
     </div>
 
-
-<ul class="accordion" data-accordion>
-  <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Modul 1: Vrste dronova</a>
-    <div class="accordion-content" data-tab-content>
-      <p>Uvod u različite klase dronova, od mikro dronova za unutarnje prostore do naprednih FPV strojeva.</p>
+    <div class="top-bar" id="main-menu">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">FPV Akademija</li>
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="program.html">Kurikulum</a></li>
+          <li><a href="kontakt.html">Prijava</a></li>
+        </ul>
+      </div>
     </div>
-  </li>
-
-  <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Modul 2: Simulatori</a>
-    <div class="accordion-content" data-tab-content>
-      <p>Početna obuka u virtualnom okruženju radi sigurnosti i brzog usvajanja tehnika upravljanja.</p>
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell text-center">
+        <h2>Kurikulum programa</h2>
+        <p class="lead">Program je podijeljen u tri modula koji polaznike vode od teorijskih osnova do praktičnog
+          upravljanja dronovima. Svaki modul detaljno je opisan u nastavku.</p>
+      </div>
     </div>
-  </li>
 
-  <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Modul 3: Elektronika</a>
-    <div class="accordion-content" data-tab-content>
-      <p>Radionice o povezivanju kontrolera, motora, ESC-ova i prijemnika.</p>
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 cell">
+        <ul class="accordion" data-accordion>
+          <li class="accordion-item is-active" data-accordion-item>
+            <a href="#" class="accordion-title">Modul 1: Vrste dronova</a>
+            <div class="accordion-content" data-tab-content>
+              <p>Uvod u različite klase dronova, od mikro dronova za unutarnje prostore do naprednih FPV strojeva.</p>
+              <ul>
+                <li>Podjela dronova prema veličini i namjeni</li>
+                <li>Racing dronovi vs. freestyle dronovi</li>
+                <li>Osnovni dijelovi letjelice: okvir, motori, propeleri</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="accordion-item" data-accordion-item>
+            <a href="#" class="accordion-title">Modul 2: Simulatori</a>
+            <div class="accordion-content" data-tab-content>
+              <p>Početna obuka u virtualnom okruženju radi sigurnosti i brzog usvajanja tehnika upravljanja.</p>
+              <ul>
+                <li>Rad s popularnim FPV simulatorima</li>
+                <li>Osnovne manevre: hover, okreti, prolazak kroz vrata</li>
+                <li>Postavljanje i kalibracija kontrolera</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="accordion-item" data-accordion-item>
+            <a href="#" class="accordion-title">Modul 3: Elektronika</a>
+            <div class="accordion-content" data-tab-content>
+              <p>Radionice o povezivanju kontrolera, motora, ESC-ova i prijemnika.</p>
+              <ul>
+                <li>Lemljenje i sastavljanje elektroničkih komponenti</li>
+                <li>Povezivanje leta kontrolera (flight controller) s ESC-ovima</li>
+                <li>Osnove radio veze i prijemnika</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-  </li>
-</ul>
 
-   
-       <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
+  </div>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
 </body>
+
 </html>
