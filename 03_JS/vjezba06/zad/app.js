@@ -91,6 +91,8 @@ document.getElementById('izvedi').addEventListener('click',()=>{
 
 // 1. zadatak
 // Napiši program koji prima string komandu ("start", "stop", "pauza") i ispisuje odgovarajuću poruku.
+
+
 // Primjer ulaza: "pauza"
 // Ispis: "Pauza programa"
 
@@ -107,6 +109,47 @@ document.getElementById('izvedi').addEventListener('click',()=>{
 // 80–89 → "Vrlo dobar"
 // 90–100 → "Odličan"
 // Napomena: koristi switch(true).
+if(!aString.trim()){
+            rez.innerHTML="Obavezan unos"
+            rez.style.color='red'
+            return
+            }
+            
+            if(aString.trim().length>1){
+                rez.innerHTML='Obavezno jedno slovo'
+                rez.style.color='red'
+                return
+            }
+
+            const b= Number(aString.trim())
+
+            if(b || b===0){
+                rez.innerHTML='Ne broj, slovo'
+                rez.style.color='red'
+                return
+
+            }
+
+
+            switch(aString.trim().toLowerCase()){
+                case 'a':
+                     rez.innerHTML='Položio'
+                     break
+                case 'b':
+                     rez.innerHTML='Položio'
+                     break
+                case 'c':
+                    rez.innerHTML='Položio'
+                    break
+                case 'd':
+                case 'f':
+                    rez.innerHTML='Nije položio'
+                    rez.style.color='brown'
+                    break
+                default:
+                    rez.innerHTML='Dozvoljeni unos A, B, C, D ili F'
+                    rez.style.color='red'
+            }
 
 // 4. zadatak
 // Za uneseno ime namirnice ispisi dali je voće ili meso ili nemozes odrediti
