@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Početna</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/app.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -14,10 +14,12 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">FPV Akademija</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">FPV Akademija</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -28,6 +30,9 @@
                         <li class="nav-item"><a class="nav-link" href="program.html">Kurikulum</a></li>
                         <li class="nav-item"><a class="nav-link" href="kontakt.html">Prijava</a></li>
                     </ul>
+                    <button id="themeToggle" class="btn btn-outline-secondary mt-3 mt-lg-0 ms-lg-3" type="button">
+                        🌙 Tamni način
+                    </button>
                 </div>
             </div>
         </div>
@@ -36,12 +41,13 @@
     <header class="bg-primary text-white text-center py-5 position-relative mb-5" style="z-index: 2;">
         <div class="container">
             <h1 class="display-4 fw-bold">FPV Akademija</h1>
-            <p class="lead">Ovladajte nebom kroz tehnologiju — naučite upravljati, sastavljati i razumjeti dronove od nule.</p>
+            <p class="lead">Ovladajte nebom kroz tehnologiju — naučite upravljati, sastavljati i razumjeti dronove od
+                nule.</p>
             <a href="program.html" class="btn btn-light btn-lg">Saznajte više o programu</a>
         </div>
     </header>
 
-    <div class="container my-5" style="margin-top: -4rem !important; position: relative; z-index: 3;">
+    <div class="container my-5 mt-n5 position-relative" style="z-index: 3;">
         <div id="droneCarousel" class="carousel slide shadow-lg rounded" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#droneCarousel" data-bs-slide-to="0" class="active"></button>
@@ -80,7 +86,7 @@
     <div class="container my-5">
         <div class="row g-4">
             <div class="col-12 col-md-4">
-                <div class="card h-100 shadow-sm" onmouseover="this.className='card h-100 shadow-lg'" onmouseout="this.className='card h-100 shadow-sm'">
+                <div class="card h-100 shadow-sm hover-shadow">
                     <div class="card-body">
                         <h3 class="card-title h5">Tehničke vještine</h3>
                         <p class="card-text">Naučite osnove elektronike i konfiguriranja softvera za dronove.</p>
@@ -88,15 +94,16 @@
                 </div>
             </div>
             <div class="col-12 col-md-4">
-                <div class="card h-100 shadow-sm" onmouseover="this.className='card h-100 shadow-lg'" onmouseout="this.className='card h-100 shadow-sm'">
+                <div class="card h-100 shadow-sm hover-shadow">
                     <div class="card-body">
                         <h3 class="card-title h5">STEM</h3>
-                        <p class="card-text">Primijenite znanost, tehnologiju, inženjerstvo i matematiku kroz praksu.</p>
+                        <p class="card-text">Primijenite znanost, tehnologiju, inženjerstvo i matematiku kroz praksu.
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-4">
-                <div class="card h-100 shadow-sm" onmouseover="this.className='card h-100 shadow-lg'" onmouseout="this.className='card h-100 shadow-sm'">
+                <div class="card h-100 shadow-sm hover-shadow">
                     <div class="card-body">
                         <h3 class="card-title h5">Karijera</h3>
                         <p class="card-text">Otvorite nova vrata u svijetu profesionalnog snimanja i pilotiranja.</p>
@@ -112,7 +119,8 @@
         </div>
     </footer>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>

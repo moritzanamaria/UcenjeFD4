@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kurikulum</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/app.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -28,6 +28,9 @@
                         <li class="nav-item"><a class="nav-link active" href="program.html">Kurikulum</a></li>
                         <li class="nav-item"><a class="nav-link" href="kontakt.html">Prijava</a></li>
                     </ul>
+                     <button id="themeToggle" class="btn btn-outline-secondary mt-3 mt-lg-0 ms-lg-3" type="button">
+                        🌙 Tamni način
+                    </button>
                 </div>
             </div>
         </div>
@@ -44,7 +47,7 @@
         <div class="row mb-5 justify-content-center">
             <div class="col-12 col-md-8">
                 <div class="ratio ratio-16x9 shadow rounded overflow-hidden">
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/NU3Tslz5vFM" title="YouTube video player" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -62,7 +65,7 @@
                         <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#kurikulumAccordion">
                             <div class="accordion-body">
                                 <p>Detaljna izrada i lemljenje komponenti.</p>
-                                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#predavacModal">
+                                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#predavacModal1">
                                     Predavači
                                 </button>
                             </div>
@@ -77,7 +80,7 @@
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#kurikulumAccordion">
                             <div class="accordion-body">
                                 <p>Pravila letenja i zakoni zračnog prometa.</p>
-                                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#predavacModal">
+                                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#predavacModal2">
                                     Predavači
                                 </button>
                             </div>
@@ -92,7 +95,7 @@
                         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#kurikulumAccordion">
                             <div class="accordion-body">
                                 <p>Upravljanje letjelicom kroz FPV naočale.</p>
-                                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#predavacModal">
+                                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#predavacModal3">
                                     Predavači
                                 </button>
                             </div>
@@ -137,15 +140,49 @@
         </div>
     </div>
 
-    <div class="modal fade" id="predavacModal" tabindex="-1">
+    <div class="modal fade" id="predavacModal1" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Detalji o predavačima</h5>
+                    <h5 class="modal-title">Predavač - Sastavljanje drona</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Predavači su certificirani FPV piloti i stručnjaci za elektroniku sa višegodišnjim iskustvom.</p>
+                    <p><strong>Inž. Marko Horvat</strong> - Stručnjak za hardver, lemljenje i reparaturu elektroničkih komponenti s preko 8 godina iskustva.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="predavacModal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Predavač - Sigurnost</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Ana Kovač, mag. ing. traff.</strong> - Ovlaštena stručnjakinja za zračni promet, propise i zakonodavstvo bespilotnih sustava.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="predavacModal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Predavač - Pilotiranje</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Ivan FPV Perić</strong> - Profesionalni trkač, višestruki nacionalni prvak i instruktor akrobatskog letenja.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
@@ -160,7 +197,8 @@
         </div>
     </footer>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>
