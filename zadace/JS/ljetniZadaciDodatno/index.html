@@ -1,0 +1,46 @@
+<title>Ljetni zadaci dodatno</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Zadaci</h1>
+
+        <div class="form-group">
+            <label for="zadatak">Odaberi zadatak:</label>
+            <select id="zadatak">
+                <option value="z1">1. Izračun površine pravokutnika (A: duljina, B: širina)</option>
+                <option value="z2">2. Provjera je li broj pozitivan, negativan ili nula (A: broj)</option>
+                <option value="z3">3. Zbroj elemenata niza (A: brojevi odvojeni zarezom)</option>
+                <option value="z4">4. Prosjek ocjena (A: ocjene odvojene zarezom)</option>
+                <option value="z5">5. Fibonaccijev niz (A: broj n)</option>
+                <option value="z6">6. Preokret stringa (A: tekst)</option>
+                <option value="z7">7. Brojanje samoglasnika (A: tekst)</option>
+                <option value="z8">8. Pretvorba temperature (A: temp, B: smjer c2f / f2c)</option>
+                <option value="z9">9. Sortiranje niza (A: brojevi odvojeni zarezom)</option>
+                <option value="z10">10. Kalkulator (A: prvi broj, B: drugi broj)</option>
+                <option value="z11">11. Generator lozinki (A: duljina lozinke)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="a">Vrijednost A:</label>
+            <input type="text" id="a" placeholder="Unesite vrijednost A...">
+        </div>
+
+        <div class="form-group">
+            <label for="b">Vrijednost B:</label>
+            <input type="text" id="b" placeholder="Unesite vrijednost B...">
+        </div>
+        <button id="izvedi">Izvedi zadatak</button>
+
+        <div class="result-box">
+            <h3>Rezultat:</h3>
+            <div id="rezultat"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
