@@ -1,0 +1,94 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fce4ec;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.kalkulator-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(216, 27, 96, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #d81b60;
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+.upute {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.unos-podataka {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    border: 2px solid #f48fb1;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 150px;
+    text-align: center;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #d81b60;
+}
+
+.srce-ikona {
+    font-size: 24px;
+}
+
+button {
+    background-color: #d81b60;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #c2185b;
+}
+
+#prikaz-imena {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #555;
+}
+
+#rezultat {
+    margin-top: 10px;
+    font-family: monospace;
+    font-size: 18px;
+    color: #444;
+}
+
+.redak {
+    margin-bottom: 5px;
+    letter-spacing: 7px;
+}
