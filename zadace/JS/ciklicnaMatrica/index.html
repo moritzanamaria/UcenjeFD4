@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciklička matrica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Generator cikličke matrice</h2>
+
+        <div class="form-group">
+            <label for="a">Broj redova (A):</label>
+            <input type="number" id="a" min="2" max="50" value="5">
+        </div>
+
+        <div class="form-group">
+            <label for="b">Broj kolona (B):</label>
+            <input type="number" id="b" min="2" max="50" value="5">
+        </div>
+
+        <div class="form-group">
+            <label for="zadatak">Smjer / Opcija (1-16):</label>
+            <select id="zadatak">
+                <option value="1">1. Dolje desno, u smjeru kazaljke na satu</option>
+                <option value="2">2. Dolje lijevo, u smjeru kazaljke na satu</option>
+                <option value="3">3. Gore lijevo, u smjeru kazaljke na satu</option>
+                <option value="4">4. Gore desno, u smjeru kazaljke na satu</option>
+                <option value="5">5. Dolje desno, u kontra smjeru kazaljke na satu</option>
+                <option value="6">6. Dolje lijevo, u kontra smjeru kazaljke na satu</option>
+                <option value="7">7. Gore lijevo, u kontra smjeru kazaljke na satu</option>
+                <option value="8">8. Gore desno, u kontra smjeru kazaljke na satu</option>
+                <option value="9">9. Sredina, prvi korak lijevo, u smjeru kazaljke na satu</option>
+                <option value="10">10. Sredina, prvi korak desno, u smjeru kazaljke na satu</option>
+                <option value="11">11. Sredina, prvi korak gore, u smjeru kazaljke na satu</option>
+                <option value="12">12. Sredina, prvi korak dolje, u smjeru kazaljke na satu</option>
+                <option value="13">13. Sredina, prvi korak lijevo, u kontra smjeru kazaljke na satu</option>
+                <option value="14">14. Sredina, prvi korak desno, u kontra smjeru kazaljke na satu</option>
+                <option value="15">15. Sredina, prvi korak gore, u kontra smjeru kazaljke na satu</option>
+                <option value="16">16. Sredina, prvi korak dolje, u kontra smjeru kazaljke na satu</option>
+            </select>
+        </div>
+
+        <button id="izvedi">Izvedi zadatak</button>
+
+        <h3>Rezultat:</h3>
+        <div id="rezultat"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
