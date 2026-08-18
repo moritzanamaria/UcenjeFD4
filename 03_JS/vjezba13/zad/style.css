@@ -1,13 +1,13 @@
  :root {
-    --primarna-boja: #00d4ff;
-    --pozadina-stranice: #a4cee8;
-    --staklo-efekt: rgba(255, 255, 255, 0.05);
+    --primarna-boja: #229bb3;
+    --pozadina-stranice: #f45a6ce7;
+    --staklo-efekt: rgba(247, 76, 76, 0);
     --boja-pogreske: #ff4d4d;
 }
 
 body {
     font-family: 'Inter', system-ui, sans-serif;
-    background: radial-gradient(circle at top right, #1e293b, var(--pozadina-stranice));
+    background: radial-gradient(circle at top left, #1e293b, var(--pozadina-stranice));
     color: white;
     display: flex;
     justify-content: center;
@@ -31,14 +31,14 @@ h2 { text-align: center; color: var(--primarna-boja); margin-bottom: 2rem; lette
 
 .grupa-unosa { margin-bottom: 1.2rem; display: flex; flex-direction: column; }
 
-label { font-size: 0.85rem; margin-bottom: 0.5rem; color: #94a3b8; font-weight: 500; }
+label { font-size: 0.85rem; margin-bottom: 0.5rem; color: #deae34; font-weight: 500; }
 
 input, select {
-    background: rgba(0, 0, 0, 0.3);
-    border: 1px solid #334155;
+    background: rgba(186, 34, 34, 0.3);
+    border: 1px solid #1e76db;
     padding: 0.9rem;
     border-radius: 12px;
-    color: white;
+    color: orange;
     outline: none;
     transition: all 0.3s ease;
 }
@@ -52,7 +52,7 @@ input:focus {
 
 .gumb-potvrde {
     background: var(--primarna-boja);
-    color: #0f172a;
+    color: #f3a220;
     border: none;
     padding: 1.1rem;
     border-radius: 12px;
