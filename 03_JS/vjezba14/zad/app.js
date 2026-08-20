@@ -113,16 +113,46 @@ function izracunajStatistiku() {
     const imaOdlicnih = filtriraniPodaci.some(k => k.bodovi === 100);
     const polaznikKojiJePao = filtriraniPodaci.find(k => k.bodovi < 50);
     const pozicijaPolaznik = sviKorisnici.findIndex(k => k.ime === "Mate" && k.prezime === "Rimac");
-    ispis.innerHTML = `
-        • Ukupno bodova (filtrirano): ${sumaBodova.toLocaleString('hr-HR')} | 
-        Prosjek: ${parseFloat((filtriraniPodaci.length> 0 ? sumaBodova / filtriraniPodaci.length : 0).toFixed(2)).toLocaleString('hr-HR')}<br>
-        • Svi polaznici su platili: ${sviPodmirili ? 'DA' : 'NE'}<br>
-        • Postoji netko s maksimalnim bodovima (100): ${imaOdlicnih ? 'DA' : 'NE'}<br>
-        • Primjer polaznika ispod praga (50 bodova): ${polaznikKojiJePao ? polaznikKojiJePao.ime : 'Nema nitko'}<br>
-        • Mate Rimac se u bazi nalazi na indeksu: ${pozicijaPolaznik}
-    `;
-    // DZ: ovaj izraz iznad predaditi na DOM
+    ispis.innerHTML = ``;
+    function dodajRedak(tekst, vrijednost) {
+        const div = document.createElement('div');
+        const spanTekst = document.createElement('span');
+        spanTekst.textContent = `• ${tekst}: `;
+        div.appendChild(spanTekst);
+        const spanVrijednost = document.createElement('strong');
+        spanVrijednost.textContent = vrijednost;
+        div.appendChild(spanVrijednost);
+        ispis.appendChild(div);
+    }
+    dodajRedak(
+        'Ukupno bodova (filtrirano)', 
+        `${sumaBodova.toLocaleString('hr-HR')}`
+    );
+
+    dodajRedak(
+        'Svi polaznici su platili', 
+        sviPodmirili ? 'DA' : 'NE'
+    );
+
+    dodajRedak(
+        'Postoji netko s maksimalnim bodovima (100)', 
+        imaOdlicnih ? 'DA' : 'NE'
+    );
+
+    dodajRedak(
+        'Primjer polaznika ispod praga (50 bodova)', 
+        polaznikKojiJePao ? polaznikKojiJePao.ime : 'Nema nitko'
+    );
+
+    dodajRedak(
+        'Mate Rimac se u bazi nalazi na indeksu', 
+        pozicijaPolaznik
+    );
 }
+
+    // DZ: ovaj izraz iznad predaditi na DOM
+    
+
 document.getElementById('poljePretraga').focus();
 osvjeziPrikaz();
 
