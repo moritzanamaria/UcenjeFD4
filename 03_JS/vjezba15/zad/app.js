@@ -6,7 +6,7 @@ obrazac.addEventListener('submit', (dogadaj) => {
     dogadaj.preventDefault();
     kontejnerPogreske.replaceChildren(); // bolje od kontejnerPogreske.innerText = ''; 
     const konf = new Konfiguracija();
-     document.querySelectorAll('.greska').forEach(o => o.replaceChildren()); // počisti sve greške
+    document.querySelectorAll('.greska').forEach(o => o.replaceChildren()); // počisti sve greške
     try {
         konf.provjeriValjanost({
             projekt: document.getElementById('naziv-projekta'),
@@ -19,16 +19,21 @@ obrazac.addEventListener('submit', (dogadaj) => {
         });
         console.log('%c 🎉 PODACI USPJEŠNO PROVJERENI (JSON):', 'color: #00d4ff; font-weight: bold;');
         console.log(JSON.stringify(konf.toJSON(), null, 4));
-        
-        kontejnerPogreske.appendChild(Pomocno.kreirajElement('p','Pogledajte podatke u konzoli'))
+        function ispis() {
+            const jsonString = JSON.stringify(konf.toJSON(), null, 4);
+            document.getElementById('text-area').value = jsonString;
+        }
+        ispis();
+
+        kontejnerPogreske.appendChild(Pomocno.kreirajElement('p', 'Pogledajte podatke u konzoli'))
         // staro kontejnerPogreske.innerText = 'Pogledajte podatke u konzoli';
         document.getElementById('naziv-projekta').focus();
     } catch (e) {
-        kontejnerPogreske.appendChild(Pomocno.kreirajElement('p',e.message));
+        kontejnerPogreske.appendChild(Pomocno.kreirajElement('p', e.message));
         // staro kontejnerPogreske.innerText = '⚠️ ' + pogreska.message;
-       
-        konf.greske.forEach(o => document.getElementById('greska-'+o.element.id).appendChild(Pomocno.kreirajElement('p','⚠️ ' + o.greska))); // pobacaj poruke na pripadajuće div-ove vezane za unosna polja
-   
+
+        konf.greske.forEach(o => document.getElementById('greska-' + o.element.id).appendChild(Pomocno.kreirajElement('p', '⚠️ ' + o.greska))); // pobacaj poruke na pripadajuće div-ove vezane za unosna polja
+
         konf.greske[0].element.focus(); // fokusiraj kursor na 1. unosno polje gdje je greška
     }
 });
