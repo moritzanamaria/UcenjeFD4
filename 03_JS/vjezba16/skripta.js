@@ -1,0 +1,57 @@
+function* primjerGenerator(){
+    console.log('Početak rada generatora')
+    yield true
+    yield 2.7
+    yield {ime: 'Pero', godine: 27}
+    return 'Gotov'
+
+}
+
+const generator = primjerGenerator()
+
+console.log(generator.next())
+console.log(generator.next().value)
+console.log(generator.next().value.ime)
+console.log(generator.next())
+
+const g2 = primjerGenerator()
+
+let g;
+do{
+    g = g2.next()
+    console.log(g.value)
+}while(!g.done)
+
+const id = sljedeciID()
+
+function* sljedeciID(){
+    let id = 1
+    while(true){
+        yield `ID_${id++}`
+    }
+}    
+
+console.log(id.next().value)
+console.log(id.next().value)
+
+console.log('Nešto drugo radim')
+
+for(let i = 0; i<10; i++){
+    console.log(id.next().value)
+}
+
+function* razgovor(){
+    let odgovor
+    while(true){
+        odgovor = yield 'Kako se zoveš'
+        console.log(`Generator kaže: Drago mi je, ${odgovor}`)
+    }
+}
+
+const chat = razgovor()
+
+console.log(chat.next().value)
+console.log(chat.next('Marko').value)
+console.log(chat.next('Marija').value)
+
+
