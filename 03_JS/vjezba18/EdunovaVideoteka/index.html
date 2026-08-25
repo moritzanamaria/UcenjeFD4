@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edunova Videoteka — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <p class="eyebrow">edunova.hr // generacija 2026</p>
+      <h1 class="site-title">Frontend&nbsp;Developer<span class="dot">.</span></h1>
+      <p class="site-sub">Pregled polaznika — kartice i galerija snimljenih videa.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section id="kartice" class="section">
+      <div class="section-head">
+        <h2><span class="tag"></span></h2>
+        <p class="section-desc"></p>
+      </div>
+      <div id="cards-grid" class="cards-grid">
+        <!-- kartice se generiraju dinamički putem js/script.js -->
+      </div>
+    </section>
+
+    <section id="galerija" class="section">
+      <div class="section-head">
+        <h2><span class="tag">Video Galerija</span></h2>
+        <p class="section-desc">Pređi mišem preko videa za ime</p>
+      </div>
+      <div id="gallery-grid" class="gallery-grid">
+        <!-- galerija se generira dinamički putem js/script.js -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Edunova &mdash; Frontend Developer smjer &mdash; vježba 18</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
