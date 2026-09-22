@@ -1,9 +1,9 @@
 
 
-export default function SmjerPregled() {
+export default function SmjerPregled(){
 
 
-    return (
+    return(
         <>
             Ovdje dođe pregled smjerova
         </>
