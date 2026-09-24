@@ -6,8 +6,7 @@ import { IME_APLIKACIJE, RouteNames } from '../constants';
 import { useNavigate } from 'react-router-dom';
 
 export default function Izbornik() {
-    
-    
+
     const navigate = useNavigate()
 
 
@@ -23,11 +22,8 @@ export default function Izbornik() {
                         <Nav.Link
                         onClick={()=>{navigate(RouteNames.HOME)}}
                         >Početna</Nav.Link>
-                          <Nav.Link
-                        onClick={()=>{navigate(RouteNames.ABOUT)}}
-                        >O aplikaciji</Nav.Link>
                         <NavDropdown title="Programi" id="basic-nav-dropdown">
-                            <NavDropdown.Item 
+                            <NavDropdown.Item
                             onClick={()=>navigate(RouteNames.SMJEROVI)}
                             >Smjerovi</NavDropdown.Item>
                         </NavDropdown>
