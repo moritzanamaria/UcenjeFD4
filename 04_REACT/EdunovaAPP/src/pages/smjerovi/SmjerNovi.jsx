@@ -3,27 +3,29 @@ import { RouteNames } from "../../constants";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import SmjerService from "../../services/smjerovi/SmjerService";
 
+
 export default function SmjerNovi() {
-    
+
     const navigate = useNavigate()
 
-    async function dodaj(smjer) {
+    async function dodaj(smjer){
         await SmjerService.dodaj(smjer).then(()=>{
             navigate(RouteNames.SMJEROVI)
         })
     }
 
-    function obradiSubmit(e){
-        e.preventDefault()
+    function obradiSubmit(e){ // e je event
+        e.preventDefault() // nemoj odraditi submit
         const podaci = new FormData(e.target)
         dodaj({
-        naziv: podaci.get('naziv'),
-        trajanje: parseInt(podaci.get('trajanje')), 
-        cijena: parseFloat(podaci.get('cijena')),  
-        datumPokretanja: new Date(podaci.get('datumPokretanja')).toISOString(),
-        aktivan: podaci.get('aktivan') === 'on'
+            naziv: podaci.get('naziv'),
+            trajanje: parseInt(podaci.get('trajanje')),
+            cijena: parseFloat(podaci.get('cijena')),
+            datumPokretanja: new Date(podaci.get('datumPokretanja')).toISOString(),
+            aktivan: podaci.get('aktivan') === 'on'
         })
     }
+
 
     return (
         <>
@@ -32,6 +34,7 @@ export default function SmjerNovi() {
             </h3>
 
             <Form onSubmit={obradiSubmit}>
+
                 <Form.Group controlId="naziv">
                     <Form.Label>Naziv</Form.Label>
                     <Form.Control type="text" name="naziv" required />
@@ -42,34 +45,34 @@ export default function SmjerNovi() {
                     <Form.Control type="number" name="trajanje" step={1} />
                 </Form.Group>
 
-                  <Form.Group controlId="cijena">
+                <Form.Group controlId="cijena">
                     <Form.Label>Cijena</Form.Label>
                     <Form.Control type="number" name="cijena" step={0.01} />
                 </Form.Group>
 
-                  <Form.Group controlId="datumPokretanja">
+                <Form.Group controlId="datumPokretanja">
                     <Form.Label>Datum pokretanja</Form.Label>
                     <Form.Control type="date" name="datumPokretanja" />
                 </Form.Group>
 
-                  <Form.Group controlId="naziv">
-                    <Form.Check label='Aktivan' name="aktivan" />
+                <Form.Group controlId="aktivan" className="mt-3">
+                    <Form.Check label="Aktivan" name="aktivan" />
                 </Form.Group>
 
-                <hr />
-                <Row>
+
+                <Row className="mt-4">
                     <Col>
-                        <Link to={RouteNames.SMJEROVI_DODAJ}>
+                        <Link to={RouteNames.SMJEROVI}
+                        className="btn btn-danger">
                             Odustani
                         </Link>
                     </Col>
                     <Col>
-                        <Button type="submit">
+                        <Button type="submit" variant="success">
                             Dodaj
                         </Button>
                     </Col>
                 </Row>
-
             </Form>
 
 
